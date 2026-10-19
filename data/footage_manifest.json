@@ -1,0 +1,56 @@
+{
+  "source": "User-provided local camera footage",
+  "license": "Not specified; use is limited to the local project unless the owner confirms rights.",
+  "cameras": [
+    {
+      "cameraId": "cam-01",
+      "originalFile": "camera_01_source.avi",
+      "sourcePath": "data/source-footage/camera_01_source.avi",
+      "playbackFile": "public/videos/camera_01.mp4",
+      "durationSeconds": 100,
+      "fps": 25,
+      "resolution": "360x288",
+      "sourceCodec": "Indeo 5",
+      "groundTruthIdentityMap": null
+    },
+    {
+      "cameraId": "cam-02",
+      "originalFile": "camera_02_source.avi",
+      "sourcePath": "data/source-footage/camera_02_source.avi",
+      "playbackFile": "public/videos/camera_02.mp4",
+      "durationSeconds": 156.6,
+      "fps": 25,
+      "resolution": "360x288",
+      "sourceCodec": "MPEG-4",
+      "groundTruthIdentityMap": null
+    },
+    {
+      "cameraId": "cam-03",
+      "originalFile": "camera_03_source.avi",
+      "sourcePath": "data/source-footage/camera_03_source.avi",
+      "playbackFile": "public/videos/camera_03.mp4",
+      "durationSeconds": 156.6,
+      "fps": 25,
+      "resolution": "360x288",
+      "sourceCodec": "MPEG-4",
+      "groundTruthIdentityMap": null
+    },
+    {
+      "cameraId": "cam-04",
+      "originalFile": "camera_04_source.avi",
+      "sourcePath": "data/source-footage/camera_04_source.avi",
+      "playbackFile": "public/videos/camera_04.mp4",
+      "durationSeconds": 156.6,
+      "fps": 25,
+      "resolution": "360x288",
+      "sourceCodec": "MPEG-4",
+      "groundTruthIdentityMap": null
+    }
+  ],
+  "processing": {
+    "browserCodec": "H.264 / MP4",
+    "sourceAviPreserved": true,
+    "sampleIntervalSeconds": 1.5,
+    "identityScope": "camera-local appearance similarity; not cross-camera Re-ID"
+  }
+}

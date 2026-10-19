@@ -1,0 +1,20 @@
+node_modules/
+.venv/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+/data/source-footage/
+/data/removed-camera-ids.json
+/public/videos/camera_*.mp4
+/data/models/*.pt
+/yolo*.pt
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Runtime uploads
+/data/uploads/

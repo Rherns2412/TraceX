@@ -1,0 +1,6 @@
+{
+  "name": "TraceX — AI Video Investigator",
+  "description": "CCTV multi-camera investigation dashboard with computer-vision video processing, cross-camera identity matching (Re-ID), and chronological incident timelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

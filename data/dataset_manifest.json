@@ -1,0 +1,27 @@
+{
+  "name": "surveillance_dataset_manifest",
+  "description": "Publicly accessible multi-camera person-tracking datasets suitable for an investigation demo. These videos are not bundled in the repository and must be downloaded manually according to the source licensing terms.",
+  "preferredSources": [
+    {
+      "dataset": "PETS 2009",
+      "cameraViews": ["S2.L1", "S2.L2", "S2.L3"],
+      "sourceUrl": "https://www.cvg.reading.ac.uk/PETS2009/a.html",
+      "license": "Review the PETS 2009 terms of use before redistribution or commercial reuse.",
+      "notes": "Good for synchronized multi-camera tracking and cross-view person association."
+    },
+    {
+      "dataset": "EPFL Multi-Camera Pedestrian Dataset",
+      "cameraViews": ["Camera 1", "Camera 2", "Camera 3"],
+      "sourceUrl": "https://www.epfl.ch/labs/cvlab/data/data-multicamera-pedestrian/",
+      "license": "Check the official EPFL dataset notice and licensing conditions before use.",
+      "notes": "Useful for benchmarking Re-ID and camera transitions."
+    }
+  ],
+  "localStorageRoot": "data/datasets",
+  "importInstructions": [
+    "1. Download a small subset from an official dataset page or authorized mirror.",
+    "2. Keep videos outside the frontend source bundle (for example under data/datasets/<dataset>/<camera-id>/).",
+    "3. Add a per-camera metadata entry with camera id, source URL, acquisition timestamp, and any ground-truth identity mapping.",
+    "4. Do not claim cross-camera identity matches unless the dataset supports them or the Re-ID model was run on the imported footage."
+  ]
+}
